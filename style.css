@@ -16,6 +16,20 @@ nav {
   padding: 10px;
   text-align: center;
 }
+.load-more {
+  background: #27ae60;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.load-more:hover {
+  background: #1e5631;
+}
+
 nav a {
   color: #fff;
   margin: 0 15px;
