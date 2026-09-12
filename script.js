@@ -1,4 +1,4 @@
-// Example: Fetch Times of India RSS via rss2json
+// Example feeds
 const feeds = [
   {
     title: "Times of India",
@@ -34,13 +34,26 @@ feeds.forEach(feed => {
       
       // Show first 3 headlines
       data.items.slice(0, 3).forEach(item => {
-        html += `
-          <p><a href="${item.link}" target="_blank">${item.title}</a></p>
-        `;
+        html += `<p><a href="${item.link}" target="_blank">${item.title}</a></p>`;
       });
+      
+      // Add "Load More" button
+      html += `<button class="load-more">Load More</button>`;
       
       card.innerHTML = html;
       container.appendChild(card);
+      
+      // Handle button click
+      const button = card.querySelector(".load-more");
+      button.addEventListener("click", () => {
+        // Show remaining headlines
+        data.items.slice(3, 8).forEach(item => {
+          const extra = document.createElement("p");
+          extra.innerHTML = `<a href="${item.link}" target="_blank">${item.title}</a>`;
+          card.insertBefore(extra, button);
+        });
+        button.remove(); // remove button after loading
+      });
     })
     .catch(err => {
       console.error("Error fetching feed:", feed.title, err);
