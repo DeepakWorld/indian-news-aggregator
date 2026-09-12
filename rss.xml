@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Deepak News Hub</title>
+    <link>https://deepakworld.github.io</link>
+    <description>Indian news aggregator covering politics, sports, technology, and entertainment.</description>
+    <language>en</language>
+    <lastBuildDate>Sat, 12 Sep 2026 22:41:00 +0530</lastBuildDate>
+
+    <!-- Politics -->
+    <item>
+      <title>Government Launches New Digital Policy</title>
+      <link>https://deepakworld.github.io/politics/digital-policy</link>
+      <description>India announces a new digital transformation policy to empower SMEs.</description>
+      <pubDate>Sat, 12 Sep 2026 20:00:00 +0530</pubDate>
+      <dc:creator>Deepak</dc:creator>
+      <category>Politics</category>
+      <guid isPermaLink="true">https://deepakworld.github.io/politics/digital-policy</guid>
+      <media:content url="https://deepakworld.github.io/images/politics-policy.jpg" medium="image" width="1600" height="900" />
+    </item>
+
+    <!-- Sports -->
+    <item>
+      <title>India Wins Cricket Series Against Australia</title>
+      <link>https://deepakworld.github.io/sports/cricket-series</link>
+      <description>India secures a thrilling victory in the 2026 ODI series.</description>
+      <pubDate>Fri, 11 Sep 2026 18:00:00 +0530</pubDate>
+      <dc:creator>Sports Desk</dc:creator>
+      <category>Sports</category>
+      <guid isPermaLink="true">https://deepakworld.github.io/sports/cricket-series</guid>
+      <media:content url="https://deepakworld.github.io/images/cricket-win.jpg" medium="image" width="1280" height="720" />
+    </item>
+
+    <!-- Technology -->
+    <item>
+      <title>New AI Startup Emerges in Bangalore</title>
+      <link>https://deepakworld.github.io/tech/ai-startup</link>
+      <description>A Bangalore‑based startup introduces cutting‑edge AI solutions for SMEs.</description>
+      <pubDate>Thu, 10 Sep 2026 15:30:00 +0530</pubDate>
+      <dc:creator>Tech Reporter</dc:creator>
+      <category>Technology</category>
+      <guid isPermaLink="true">https://deepakworld.github.io/tech/ai-startup</guid>
+      <media:content url="https://deepakworld.github.io/images/ai-startup.jpg" medium="image" width="1280" height="720" />
+    </item>
+
+    <!-- Entertainment -->
+    <item>
+      <title>Bollywood Film Festival Opens in Mumbai</title>
+      <link>https://deepakworld.github.io/entertainment/film-festival</link>
+      <description>The annual Bollywood Film Festival kicks off with international guests.</description>
+      <pubDate>Wed, 09 Sep 2026 19:00:00 +0530</pubDate>
+      <dc:creator>Entertainment Desk</dc:creator>
+      <category>Entertainment</category>
+      <guid isPermaLink="true">https://deepakworld.github.io/entertainment/film-festival</guid>
+      <media:content url="https://deepakworld.github.io/images/film-festival.jpg" medium="image" width="1600" height="900" />
+    </item>
+
+  </channel>
+</rss>
