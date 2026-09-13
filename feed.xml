@@ -9,8 +9,7 @@
     <description>Indian news aggregator covering politics, sports, tech, and entertainment.</description>
     <language>en</language>
     <lastBuildDate>Sun, 13 Sep 2026 15:54:00 +0530</lastBuildDate>
-
-    <snf:logo>https://deepakworld.github.io/indian-news-aggregator/images/logo.jpg</snf:logo>
+    <snf:logo url="https://deepakworld.github.io/indian-news-aggregator/images/logo.jpg"/>
 
     <!-- Politics -->
     <item>
@@ -28,7 +27,6 @@
       <media:thumbnail url="https://deepakworld.github.io/indian-news-aggregator/images/politics-policy.jpg" />
       <snf:category>Politics</snf:category>
       <snf:author>Deepak</snf:author>
-      <snf:analytics><![CDATA[https://deepakworld.github.io/analytics/politics-policy]]></snf:analytics>
     </item>
 
     <!-- Sports -->
@@ -47,7 +45,6 @@
       <media:thumbnail url="https://deepakworld.github.io/indian-news-aggregator/images/cricket-win.jpg" />
       <snf:category>Sports</snf:category>
       <snf:author>Sports Desk</snf:author>
-      <snf:analytics><![CDATA[https://deepakworld.github.io/analytics/cricket-series]]></snf:analytics>
     </item>
 
     <!-- Technology -->
@@ -66,7 +63,6 @@
       <media:thumbnail url="https://deepakworld.github.io/indian-news-aggregator/images/ai-startup.jpg" />
       <snf:category>Technology</snf:category>
       <snf:author>Tech Reporter</snf:author>
-      <snf:analytics><![CDATA[https://deepakworld.github.io/analytics/ai-startup]]></snf:analytics>
     </item>
 
     <!-- Entertainment -->
@@ -85,7 +81,6 @@
       <media:thumbnail url="https://deepakworld.github.io/indian-news-aggregator/images/film-festival.jpg" />
       <snf:category>Entertainment</snf:category>
       <snf:author>Entertainment Desk</snf:author>
-      <snf:analytics><![CDATA[https://deepakworld.github.io/analytics/film-festival]]></snf:analytics>
     </item>
 
   </channel>
