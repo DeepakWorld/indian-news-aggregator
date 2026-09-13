@@ -10,11 +10,10 @@
     <language>en</language>
     <lastBuildDate>Sun, 13 Sep 2026 15:54:00 +0530</lastBuildDate>
 
-    <!-- Channel Logo -->
-    <snf:logo>https://deepakworld.github.io/indian-news-aggregator/images/logo.jpg</snf:logo>
-
-    <!-- Optional Analytics -->
-    <snf:analytics>https://deepakworld.github.io/analytics</snf:analytics>
+    <!-- Correct Channel Logo Structure -->
+    <snf:logo>
+      <url>https://deepakworld.github.io/indian-news-aggregator/images/logo.jpg</url>
+    </snf:logo>
 
     <!-- Politics -->
     <item>
@@ -51,6 +50,7 @@
       <snf:body>India secures a thrilling victory in the 2026 ODI series against Australia.</snf:body>
       <snf:image>https://deepakworld.github.io/indian-news-aggregator/images/cricket-win.jpg</snf:image>
       <media:thumbnail url="https://deepakworld.github.io/indian-news-aggregator/images/cricket-win.jpg" />
+      <media:status>active</media:status>
       <snf:category>Sports</snf:category>
       <snf:author>Sports Desk</snf:author>
     </item>
@@ -63,11 +63,11 @@
       <pubDate>Thu, 10 Sep 2026 15:30:00 +0530</pubDate>
 
       <content:encoded><![CDATA[
-        A Bangalore‑based startup introduces cutting‑edge AI solutions for SMEs. 
+        A Bangalore-based startup introduces cutting-edge AI solutions for SMEs. 
         The company aims to revolutionize automation and data analysis for small businesses.
       ]]></content:encoded>
 
-      <snf:body>A Bangalore‑based startup introduces cutting‑edge AI solutions for SMEs.</snf:body>
+      <snf:body>A Bangalore-based startup introduces cutting-edge AI solutions for SMEs.</snf:body>
       <snf:image>https://deepakworld.github.io/indian-news-aggregator/images/ai-startup.jpg</snf:image>
       <media:thumbnail url="https://deepakworld.github.io/indian-news-aggregator/images/ai-startup.jpg" />
       <snf:category>Technology</snf:category>
