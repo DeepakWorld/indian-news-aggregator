@@ -1,76 +1,41 @@
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f9f9f9;
-  margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  line-height: 1.6;
+  background-color: #f9f9f9;
   color: #333;
 }
+
 header {
-  background: #1e5631;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-nav {
-  background: #27ae60;
-  padding: 10px;
-  text-align: center;
-}
-.load-more {
-  background: #27ae60;
-  color: #fff;
-  border: none;
-  padding: 8px 12px;
-  margin-top: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-}
-.load-more:hover {
-  background: #1e5631;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 20px;
 }
 
-nav a {
-  color: #fff;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
+header h1 {
+  margin: 0;
+  font-size: 1.8em;
+  color: #004080;
 }
-.feed-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 20px;
+
+header p {
+  font-size: 0.9em;
+  color: #666;
 }
-.feed-card {
-  background: #fff;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  width: 280px;
-  margin: 15px;
-  padding: 15px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+article img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 5px;
 }
-.feed-card h3 {
-  font-size: 1.1rem;
-  color: #1e5631;
-  margin-bottom: 10px;
+
+article p {
+  margin-bottom: 15px;
 }
-.feed-card p {
-  font-size: 0.9rem;
-  line-height: 1.4;
-}
-.feed-card a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #27ae60;
-  font-weight: bold;
-  text-decoration: none;
-}
+
 footer {
-  background: #1e5631;
-  color: #fff;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #666;
   text-align: center;
-  padding: 15px;
-  margin-top: 30px;
 }
