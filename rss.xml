@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"
-     xmlns:media="http://search.yahoo.com/mrss/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rss xmlns:snf="http://smartnews.be/snf" version="2.0">
   <channel>
     <title>Deepak News Hub</title>
-    <link>https://deepakworld.github.io/indian-news-aggregator</link>
+    <link>https://deepakworld.github.io</link>
     <description>Indian news aggregator covering politics, sports, technology, and entertainment.</description>
     <language>en</language>
     <lastBuildDate>Sat, 12 Sep 2026 22:41:00 +0530</lastBuildDate>
@@ -13,48 +11,52 @@
     <item>
       <title>Government Launches New Digital Policy</title>
       <link>https://deepakworld.github.io/politics/digital-policy</link>
-      <description>India announces a new digital transformation policy to empower SMEs.</description>
+      <guid isPermaLink="true">https://deepakworld.github.io/politics/digital-policy</guid>
       <pubDate>Sat, 12 Sep 2026 20:00:00 +0530</pubDate>
-      <dc:creator>Deepak</dc:creator>
-      <category>Politics</category>
-      <guid isPermaLink="true">https://deepakworld.github.io/indian-news-aggregator/politics.html</guid>
-      <media:content url="https://deepakworld.github.io/images/politics-policy.jpg" medium="image" width="1600" height="900" />
+
+      <snf:body>India announces a new digital transformation policy to empower SMEs.</snf:body>
+      <snf:image>https://deepakworld.github.io/images/politics-policy.jpg</snf:image>
+      <snf:category>Politics</snf:category>
+      <snf:author>Deepak</snf:author>
     </item>
 
     <!-- Sports -->
     <item>
       <title>India Wins Cricket Series Against Australia</title>
       <link>https://deepakworld.github.io/sports/cricket-series</link>
-      <description>India secures a thrilling victory in the 2026 ODI series.</description>
+      <guid isPermaLink="true">https://deepakworld.github.io/sports/cricket-series</guid>
       <pubDate>Fri, 11 Sep 2026 18:00:00 +0530</pubDate>
-      <dc:creator>Sports Desk</dc:creator>
-      <category>Sports</category>
-      <guid isPermaLink="true">https://deepakworld.github.io/indian-news-aggregator/sports.html</guid>
-      <media:content url="https://deepakworld.github.io/images/cricket-win.jpg" medium="image" width="1280" height="720" />
+
+      <snf:body>India secures a thrilling victory in the 2026 ODI series.</snf:body>
+      <snf:image>https://deepakworld.github.io/images/cricket-win.jpg</snf:image>
+      <snf:category>Sports</snf:category>
+      <snf:author>Sports Desk</snf:author>
     </item>
 
     <!-- Technology -->
     <item>
       <title>New AI Startup Emerges in Bangalore</title>
       <link>https://deepakworld.github.io/tech/ai-startup</link>
-      <description>A Bangalore‑based startup introduces cutting‑edge AI solutions for SMEs.</description>
+      <guid isPermaLink="true">https://deepakworld.github.io/tech/ai-startup</guid>
       <pubDate>Thu, 10 Sep 2026 15:30:00 +0530</pubDate>
-      <dc:creator>Tech Reporter</dc:creator>
-      <category>Technology</category>
-      <guid isPermaLink="true">https://deepakworld.github.io/indian-news-aggregator/technology.html</guid>
-      <media:content url="https://deepakworld.github.io/images/ai-startup.jpg" medium="image" width="1280" height="720" />
+
+      <snf:body>A Bangalore‑based startup introduces cutting‑edge AI solutions for SMEs.</snf:body>
+      <snf:image>https://deepakworld.github.io/images/ai-startup.jpg</snf:image>
+      <snf:category>Technology</snf:category>
+      <snf:author>Tech Reporter</snf:author>
     </item>
 
     <!-- Entertainment -->
     <item>
       <title>Bollywood Film Festival Opens in Mumbai</title>
       <link>https://deepakworld.github.io/entertainment/film-festival</link>
-      <description>The annual Bollywood Film Festival kicks off with international guests.</description>
+      <guid isPermaLink="true">https://deepakworld.github.io/entertainment/film-festival</guid>
       <pubDate>Wed, 09 Sep 2026 19:00:00 +0530</pubDate>
-      <dc:creator>Entertainment Desk</dc:creator>
-      <category>Entertainment</category>
-      <guid isPermaLink="true">hhttps://deepakworld.github.io/indian-news-aggregator/entertainment.html</guid>
-      <media:content url="https://deepakworld.github.io/images/film-festival.jpg" medium="image" width="1600" height="900" />
+
+      <snf:body>The annual Bollywood Film Festival kicks off with international guests.</snf:body>
+      <snf:image>https://deepakworld.github.io/images/film-festival.jpg</snf:image>
+      <snf:category>Entertainment</snf:category>
+      <snf:author>Entertainment Desk</snf:author>
     </item>
 
   </channel>
