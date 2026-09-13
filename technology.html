@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Politics News - Deepak News Hub</title>
+  <title>Technology News - Deepak News Hub</title>
 
   <!-- Google AdSense Global Script -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6363845648031578"
@@ -83,14 +83,14 @@
 <body>
   <header>
     <h1>Technology News</h1>
-    <p>Latest technology updates and developments from across India</p>
+    <p>Latest technology updates and innovations from across India</p>
   </header>
   
   <nav>
     <a href="index.html">Home</a>
-    <a href="politics.html" class="active">Politics</a>
+    <a href="politics.html">Politics</a>
     <a href="sports.html">Sports</a>
-    <a href="technology.html">Technology</a>
+    <a href="technology.html" class="active">Technology</a>
     <a href="entertainment.html">Entertainment</a>
   </nav>
   
@@ -122,16 +122,30 @@
     </p>
   </footer>
 
-  <!-- Technology RSS Script with CORS Proxy (No Rate Limit Issues) -->
   <script>
-    const rssUrl = "https://timesofindia.indiatimes.com/rssfeedsp/66949542.cms";
-    const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(rssUrl)}`;
+    const rssUrls = {
+      politics: "https://timesofindia.indiatimes.com/rssfeeds/2965892.cms",
+      sports: "https://timesofindia.indiatimes.com/rssfeeds/4719148.cms",
+      technology: "https://timesofindia.indiatimes.com/rssfeeds/66949542.cms",
+      entertainment: "https://timesofindia.indiatimes.com/rssfeeds/1081479906.cms"
+    };
 
-    fetch(proxyUrl)
-      .then(response => {
-        if (!response.ok) throw new Error('Network response was not ok');
-        return response.text();
-      })
+    const currentCategory = 'technology'; 
+    const rssUrl = rssUrls[currentCategory];
+
+    // Try AllOrigins first, fallback to Codetabs proxy
+    function fetchFeed(url) {
+      const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`;
+      return fetch(proxyUrl).then(res => {
+        if (!res.ok) throw new Error("AllOrigins failed");
+        return res.text();
+      }).catch(() => {
+        const fallbackUrl = `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`;
+        return fetch(fallbackUrl).then(res => res.text());
+      });
+    }
+
+    fetchFeed(rssUrl)
       .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
       .then(data => {
         const feedContainer = document.getElementById('news-feed');
