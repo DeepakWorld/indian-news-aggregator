@@ -2,8 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Indian News Aggregator</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian News Aggregator - Deepak News Hub</title>
+
+  <!-- Google AdSense Global Script -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6363845648031578"
+       crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #002b49;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+    nav {
+      background: #004080;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .feed-container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .news-card {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      font-size: 0.9em;
+    }
+    footer a {
+      color: #ffd700;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -12,20 +76,42 @@
   </header>
   
   <nav>
-    <a href="#">Politics</a>
-    <a href="#">Sports</a>
-    <a href="#">Technology</a>
-    <a href="#">Entertainment</a>
+    <a href="#politics">Politics</a>
+    <a href="#sports">Sports</a>
+    <a href="#technology">Technology</a>
+    <a href="#entertainment">Entertainment</a>
   </nav>
   
   <section class="feed-container" id="feeds">
-    <!-- Feed cards will be injected here by script.js -->
+    <!-- Static placeholder or dynamic feed cards -->
+    <div class="news-card">
+      <h3>Latest Headlines from India</h3>
+      <p>Welcome to Deepak News Hub. Stay updated with headlines aggregated from trusted sources across India.</p>
+    </div>
+
+    <!-- Active AdSense Ad Unit -->
+    <div style="margin:20px 0; text-align:center;">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-6363845648031578"
+           data-ad-slot="7247432564"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
   </section>
   
   <footer>
     <p>&copy; 2026 Deepak News Hub | Powered by RSS</p>
+    <p>
+      <a href="privacy.html">Privacy Policy</a> | 
+      <a href="terms.html">Terms & Conditions</a> | 
+      <a href="contact.html">Contact Us</a>
+    </p>
   </footer>
-  
+
   <script src="script.js"></script>
 </body>
 </html>
