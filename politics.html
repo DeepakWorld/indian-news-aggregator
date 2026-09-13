@@ -124,21 +124,28 @@
 
   <script>
     const rssUrls = {
-      politics: "https://timesofindia.indiatimes.com/rssfeedsp/2965892.cms",
-      sports: "https://timesofindia.indiatimes.com/rssfeedsp/4719148.cms",
-      technology: "https://timesofindia.indiatimes.com/rssfeedsp/66949542.cms",
-      entertainment: "https://timesofindia.indiatimes.com/rssfeedsp/1081479906.cms"
+      politics: "https://timesofindia.indiatimes.com/rssfeeds/2965892.cms",
+      sports: "https://timesofindia.indiatimes.com/rssfeeds/4719148.cms",
+      technology: "https://timesofindia.indiatimes.com/rssfeeds/66949542.cms",
+      entertainment: "https://timesofindia.indiatimes.com/rssfeeds/1081479906.cms"
     };
 
     const currentCategory = 'politics'; 
     const rssUrl = rssUrls[currentCategory];
-    const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(rssUrl)}`;
 
-    fetch(proxyUrl)
-      .then(response => {
-        if (!response.ok) throw new Error('Network response was not ok');
-        return response.text();
-      })
+    // Try AllOrigins first, fallback to Codetabs proxy
+    function fetchFeed(url) {
+      const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`;
+      return fetch(proxyUrl).then(res => {
+        if (!res.ok) throw new Error("AllOrigins failed");
+        return res.text();
+      }).catch(() => {
+        const fallbackUrl = `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`;
+        return fetch(fallbackUrl).then(res => res.text());
+      });
+    }
+
+    fetchFeed(rssUrl)
       .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
       .then(data => {
         const feedContainer = document.getElementById('news-feed');
